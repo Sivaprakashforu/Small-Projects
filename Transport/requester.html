@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+    <head>
+            
+        <meta charset="utf-8">
+        <title>Bus Schedule</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
+        <link href="stylesheet" href="css/datepicker.css">∂
+
+    </head>
+
+    <body>
+        <!--https://github.com/divya2661/Transport-Management-System/tree/master/frontend-->
+        
+        <div class="container">
+            <div style="margin-top: 7%; background-color: rgb(227,255,186); padding-bottom: 3%;" class="col-md-4 col-sm-12 col-md-offset-4">
+
+                <h2 style = "color:orange; text-align: center; font-size: 200%;">Request</h2>
+                <form>
+                    <div class="form-group">
+                        <input type="date" name="dt" id="example1"/><br>
+
+                        <select name="stm" class="form-control">
+                            <option>Start Time</option>
+                            <option>08:00:00</option>
+                            <option>09:00:00</option>
+                            <option>10:00:00</option>
+                            <option>11:00:00</option>
+                            <option>12:00:00</option>
+                            <option>13:00:00</option>
+                            <option>14:00:00</option>
+                            <option>15:00:00</option>
+                            <option>16:00:00</option>
+                        </select><br>
+                        <select name="etm" class="form-control">
+                            <option>End Time</option>
+                            <option>09:00:00</option>
+                            <option>10:00:00</option>
+                            <option>11:00:00</option>
+                            <option>12:00:00</option>
+                            <option>13:00:00</option>
+                            <option>14:00:00</option>
+                            <option>15:00:00</option>
+                            <option>16:00:00</option>
+                            <option>17:00:00</option>
+                        </select><br>
+
+                        
+
+                        
+                        <input class="form-control" type="number" name="nos" placeholder="Date"/><br>
+                        <textarea name="rsn" class="form-control" rows="3" placeholder="Reason"></textarea>
+                                            
+                    </div>
+                    <button name="sub" type="submit" class="btninfo" id="result">Submit</button>
+
+                </form>  
+            </div>
+        </div>  
+
+        
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+
+                $('#example1').datepicker({
+                    format: "dd/mm/yyyy"
+                });
+            });
+        </script>  
+
+        
+
+
+    </body>
+
+
+</html>
